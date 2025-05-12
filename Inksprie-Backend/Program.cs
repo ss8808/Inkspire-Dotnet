@@ -109,9 +109,6 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 
 app.UseAuthorization();
-
-app.MapIdentityApi<IdentityUser<int>>();
-
 app.MapControllers();
-
+app.MapIdentityApi<IdentityUser<int>>();
 app.Run();
