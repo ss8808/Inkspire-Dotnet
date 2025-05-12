@@ -584,15 +584,15 @@ namespace Inksprie_Backend.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8658780d-ce45-43ba-9e7e-197d4107c289",
+                            ConcurrencyStamp = "93dc9af5-01c9-4c60-9da1-95d46952e700",
                             Email = "admin@yourapp.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@YOURAPP.COM",
                             NormalizedUserName = "ADMIN@YOURAPP.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEGxFHgJ6zQV4wz0A5XJtRa+qQHJOpEZEHDszwrDXO7jamCZVVHtXx52h9avmp2588Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEE00nNU6mAXdmoMU/ALlBxMApIV5yKWCIijaW0Qi0nD/A0mAhlOxbrNyGuI6XCh6mQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6c07aa03-89ab-4812-bb69-dd15f417dceb",
+                            SecurityStamp = "a634c85d-a867-4525-a550-ed942cf936be",
                             TwoFactorEnabled = false,
                             UserName = "admin@yourapp.com"
                         });

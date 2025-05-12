@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OxA4S31lFYi8vqcV7+ClYAE9z6a/9WYj8izYl4LNvEs=",
+  "Hash": "AUvsiqDQ86tVqVCS5aObFoYiL4EKY6sgId9eVzsYlY8=",
   "Source": "Inksprie-Backend",
   "BasePath": "_content/Inksprie-Backend",
   "Mode": "Default",
@@ -10,17 +10,36 @@
     {
       "Name": "Inksprie-Backend\\wwwroot",
       "Source": "Inksprie-Backend",
-      "ContentRoot": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\",
+      "ContentRoot": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\wwwroot\\",
       "BasePath": "_content/Inksprie-Backend",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\images\\426ae296-6fe4-4b70-8cb2-83ca54819050_OIP.jpeg",
+      "Identity": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\wwwroot\\images\\1b527b5e-16fd-4fcf-920d-65b21e55ef4d_Screenshot 2023-11-22 194542.png",
       "SourceId": "Inksprie-Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\",
+      "ContentRoot": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\wwwroot\\",
+      "BasePath": "_content/Inksprie-Backend",
+      "RelativePath": "images/1b527b5e-16fd-4fcf-920d-65b21e55ef4d_Screenshot 2023-11-22 194542.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1b527b5e-16fd-4fcf-920d-65b21e55ef4d_Screenshot 2023-11-22 194542.png"
+    },
+    {
+      "Identity": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\wwwroot\\images\\426ae296-6fe4-4b70-8cb2-83ca54819050_OIP.jpeg",
+      "SourceId": "Inksprie-Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\wwwroot\\",
       "BasePath": "_content/Inksprie-Backend",
       "RelativePath": "images/426ae296-6fe4-4b70-8cb2-83ca54819050_OIP.jpeg",
       "AssetKind": "All",
@@ -36,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\images\\426ae296-6fe4-4b70-8cb2-83ca54819050_OIP.jpeg"
     },
     {
-      "Identity": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\images\\9b72bc99-a8e2-4fb0-a98d-1ea44882f7af_tomorrow.jpeg",
+      "Identity": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\wwwroot\\images\\9b72bc99-a8e2-4fb0-a98d-1ea44882f7af_tomorrow.jpeg",
       "SourceId": "Inksprie-Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\",
+      "ContentRoot": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\wwwroot\\",
       "BasePath": "_content/Inksprie-Backend",
       "RelativePath": "images/9b72bc99-a8e2-4fb0-a98d-1ea44882f7af_tomorrow.jpeg",
       "AssetKind": "All",
@@ -55,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\images\\9b72bc99-a8e2-4fb0-a98d-1ea44882f7af_tomorrow.jpeg"
     },
     {
-      "Identity": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\images\\c04f3370-1b2b-4a20-b10a-bcf6daf1a15d_candy house.jpeg",
+      "Identity": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\wwwroot\\images\\c04f3370-1b2b-4a20-b10a-bcf6daf1a15d_candy house.jpeg",
       "SourceId": "Inksprie-Backend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\",
+      "ContentRoot": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\wwwroot\\",
       "BasePath": "_content/Inksprie-Backend",
       "RelativePath": "images/c04f3370-1b2b-4a20-b10a-bcf6daf1a15d_candy house.jpeg",
       "AssetKind": "All",
