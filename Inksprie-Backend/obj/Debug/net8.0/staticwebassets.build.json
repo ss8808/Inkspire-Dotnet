@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "OxA4S31lFYi8vqcV7+ClYAE9z6a/9WYj8izYl4LNvEs=",
+  "Source": "Inksprie-Backend",
+  "BasePath": "_content/Inksprie-Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Inksprie-Backend\\wwwroot",
+      "Source": "Inksprie-Backend",
+      "ContentRoot": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\",
+      "BasePath": "_content/Inksprie-Backend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\images\\426ae296-6fe4-4b70-8cb2-83ca54819050_OIP.jpeg",
+      "SourceId": "Inksprie-Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\",
+      "BasePath": "_content/Inksprie-Backend",
+      "RelativePath": "images/426ae296-6fe4-4b70-8cb2-83ca54819050_OIP.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\426ae296-6fe4-4b70-8cb2-83ca54819050_OIP.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\images\\9b72bc99-a8e2-4fb0-a98d-1ea44882f7af_tomorrow.jpeg",
+      "SourceId": "Inksprie-Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\",
+      "BasePath": "_content/Inksprie-Backend",
+      "RelativePath": "images/9b72bc99-a8e2-4fb0-a98d-1ea44882f7af_tomorrow.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\9b72bc99-a8e2-4fb0-a98d-1ea44882f7af_tomorrow.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\images\\c04f3370-1b2b-4a20-b10a-bcf6daf1a15d_candy house.jpeg",
+      "SourceId": "Inksprie-Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\",
+      "BasePath": "_content/Inksprie-Backend",
+      "RelativePath": "images/c04f3370-1b2b-4a20-b10a-bcf6daf1a15d_candy house.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c04f3370-1b2b-4a20-b10a-bcf6daf1a15d_candy house.jpeg"
+    }
+  ]
+}

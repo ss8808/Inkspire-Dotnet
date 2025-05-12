@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\images\\426ae296-6fe4-4b70-8cb2-83ca54819050_OIP.jpeg",
+      "PackagePath": "staticwebassets\\images\\426ae296-6fe4-4b70-8cb2-83ca54819050_OIP.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\images\\9b72bc99-a8e2-4fb0-a98d-1ea44882f7af_tomorrow.jpeg",
+      "PackagePath": "staticwebassets\\images\\9b72bc99-a8e2-4fb0-a98d-1ea44882f7af_tomorrow.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\bhatt\\Desktop\\kri-g\\AppDev\\Inksprie-Backend\\wwwroot\\images\\c04f3370-1b2b-4a20-b10a-bcf6daf1a15d_candy house.jpeg",
+      "PackagePath": "staticwebassets\\images\\c04f3370-1b2b-4a20-b10a-bcf6daf1a15d_candy house.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Inksprie-Backend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Inksprie-Backend.props",
+      "PackagePath": "build\\Inksprie-Backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Inksprie-Backend.props",
+      "PackagePath": "buildMultiTargeting\\Inksprie-Backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Inksprie-Backend.props",
+      "PackagePath": "buildTransitive\\Inksprie-Backend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

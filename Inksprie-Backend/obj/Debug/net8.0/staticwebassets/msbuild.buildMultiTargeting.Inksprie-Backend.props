@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Inksprie-Backend.props" />
+</Project>
