@@ -1,0 +1,186 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\islington\\AD coursework 2\\test-repo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|d:\\islington\\ad coursework 2\\test-repo\\inksprie-backend\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|solutionrelative:inksprie-backend\\entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Migrations\\20250513080827_bookmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Inksprie-Backend\\Migrations\\20250513080827_bookmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|d:\\islington\\ad coursework 2\\test-repo\\inksprie-backend\\interfaces\\ibookmarkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|solutionrelative:inksprie-backend\\interfaces\\ibookmarkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|d:\\islington\\ad coursework 2\\test-repo\\inksprie-backend\\services\\bookmarkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|solutionrelative:inksprie-backend\\services\\bookmarkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|d:\\islington\\ad coursework 2\\test-repo\\inksprie-backend\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|solutionrelative:inksprie-backend\\interfaces\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|d:\\islington\\ad coursework 2\\test-repo\\inksprie-backend\\dtos\\bookmarkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|solutionrelative:inksprie-backend\\dtos\\bookmarkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|d:\\islington\\ad coursework 2\\test-repo\\inksprie-backend\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|solutionrelative:inksprie-backend\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|d:\\islington\\ad coursework 2\\test-repo\\inksprie-backend\\entities\\bookmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15003B4D-97DB-4AB4-99D6-C364A3B8198E}|Inksprie-Backend\\Inksprie-Backend.csproj|solutionrelative:inksprie-backend\\entities\\bookmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1027,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Entities\\CartItem.cs",
+              "RelativeDocumentMoniker": "Inksprie-Backend\\Entities\\CartItem.cs",
+              "ToolTip": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Entities\\CartItem.cs",
+              "RelativeToolTip": "Inksprie-Backend\\Entities\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T08:17:17.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250513080827_bookmark.cs",
+              "DocumentMoniker": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Migrations\\20250513080827_bookmark.cs",
+              "RelativeDocumentMoniker": "Inksprie-Backend\\Migrations\\20250513080827_bookmark.cs",
+              "ToolTip": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Migrations\\20250513080827_bookmark.cs",
+              "RelativeToolTip": "Inksprie-Backend\\Migrations\\20250513080827_bookmark.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T08:08:27.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IBookmarkService.cs",
+              "DocumentMoniker": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Interfaces\\IBookmarkService.cs",
+              "RelativeDocumentMoniker": "Inksprie-Backend\\Interfaces\\IBookmarkService.cs",
+              "ToolTip": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Interfaces\\IBookmarkService.cs",
+              "RelativeToolTip": "Inksprie-Backend\\Interfaces\\IBookmarkService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T08:04:48.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Interfaces\\IBookService.cs",
+              "RelativeDocumentMoniker": "Inksprie-Backend\\Interfaces\\IBookService.cs",
+              "ToolTip": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Interfaces\\IBookService.cs",
+              "RelativeToolTip": "Inksprie-Backend\\Interfaces\\IBookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T08:04:47.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookmarkDto.cs",
+              "DocumentMoniker": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Dtos\\BookmarkDto.cs",
+              "RelativeDocumentMoniker": "Inksprie-Backend\\Dtos\\BookmarkDto.cs",
+              "ToolTip": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Dtos\\BookmarkDto.cs",
+              "RelativeToolTip": "Inksprie-Backend\\Dtos\\BookmarkDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T08:04:19.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookmarkService.cs",
+              "DocumentMoniker": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Services\\BookmarkService.cs",
+              "RelativeDocumentMoniker": "Inksprie-Backend\\Services\\BookmarkService.cs",
+              "ToolTip": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Services\\BookmarkService.cs",
+              "RelativeToolTip": "Inksprie-Backend\\Services\\BookmarkService.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAgwEMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T08:03:41.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "Inksprie-Backend\\Services\\BookService.cs",
+              "ToolTip": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Services\\BookService.cs",
+              "RelativeToolTip": "Inksprie-Backend\\Services\\BookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T08:03:37.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Bookmark.cs",
+              "DocumentMoniker": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Entities\\Bookmark.cs",
+              "RelativeDocumentMoniker": "Inksprie-Backend\\Entities\\Bookmark.cs",
+              "ToolTip": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\Entities\\Bookmark.cs",
+              "RelativeToolTip": "Inksprie-Backend\\Entities\\Bookmark.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T08:02:14.46Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

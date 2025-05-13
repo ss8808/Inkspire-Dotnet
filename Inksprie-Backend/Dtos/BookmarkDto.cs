@@ -6,5 +6,8 @@
         public int UserId { get; set; }
         public int BookId { get; set; }
         public DateTime CreatedAt { get; set; }
+
+        public BookDto Book { get; set; }
+
     }
 }
