@@ -61,17 +61,23 @@ namespace Inksprie_Backend.Services
                 throw new ArgumentException("User does not exist.");
 
             var bookmarks = await _context.Bookmarks
+                .Include(b => b.Book)  // Make sure this Include is present
                 .Where(b => b.UserId == userId)
                 .Select(b => new BookmarkDto
                 {
                     Id = b.Id,
                     UserId = b.UserId,
                     BookId = b.BookId,
-                    CreatedAt = b.CreatedAt
+                    CreatedAt = b.CreatedAt,
+                    Book = new BookDto  // Make sure to populate this property
+                    {
+                        Id = b.Book.Id,
+                        Title = b.Book.Title,
+                        AuthorName = b.Book.AuthorName,
+                        CoverImageUrl = b.Book.CoverImageUrl,
+                        // Map other book properties as needed
+                    }
                 }).ToListAsync();
-
-            if (!bookmarks.Any())
-                throw new KeyNotFoundException("No bookmarks found for this user.");
 
             return bookmarks;
         }
@@ -93,6 +99,7 @@ namespace Inksprie_Backend.Services
             await _context.SaveChangesAsync();
             return true;
         }
+
 
     }
 }
