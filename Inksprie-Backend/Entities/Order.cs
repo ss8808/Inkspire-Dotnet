@@ -1,4 +1,5 @@
 ﻿using Inksprie_Backend.Enum;
+using Microsoft.AspNetCore.Identity;
 
 namespace Inksprie_Backend.Entities
 {
@@ -18,6 +19,8 @@ namespace Inksprie_Backend.Entities
         public DateTime? PickupDate { get; set; }
         public int? ProcessedBy { get; set; } // Admin FK
         public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+
+        public IdentityUser<int> User { get; set; } = null!;
 
     }
 }

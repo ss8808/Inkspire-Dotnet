@@ -717,6 +717,32 @@
   },
   {
     "ContainingType": "Inksprie_Backend.Controllers.OrderController",
+    "Method": "GetAllOrderHistory",
+    "RelativePath": "api/Order/all-history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inksprie_Backend.Controllers.OrderController",
+    "Method": "CancelOrder",
+    "RelativePath": "api/Order/cancel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inksprie_Backend.Controllers.OrderController",
     "Method": "CompleteOrder",
     "RelativePath": "api/Order/complete",
     "HttpMethod": "POST",
@@ -752,6 +778,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Inksprie_Backend.Controllers.OrderController",
+    "Method": "GetUserOrderHistory",
+    "RelativePath": "api/Order/user-history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Inksprie_Backend.Controllers.ReviewController",
     "Method": "AddReview",
     "RelativePath": "api/Review",
@@ -762,6 +798,22 @@
       {
         "Name": "dto",
         "Type": "Inksprie_Backend.Dtos.ReviewDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inksprie_Backend.Controllers.ReviewController",
+    "Method": "HasUserReviewed",
+    "RelativePath": "api/Review/has-reviewed/{bookId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

@@ -32,6 +32,19 @@ namespace Inksprie_Backend.Controllers
             return Ok(new { message = "Review submitted successfully." });
         }
 
+        [Authorize(AuthenticationSchemes = "Identity.Bearer")]
+        [HttpGet("has-reviewed/{bookId}")]
+        public async Task<IActionResult> HasUserReviewed(int bookId)
+        {
+            var userIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (!int.TryParse(userIdStr, out int userId))
+                return Unauthorized();
+
+            var hasReviewed = await _reviewService.HasUserReviewedAsync(userId, bookId);
+            return Ok(new { hasReviewed });
+        }
+
+
 
     }
 }

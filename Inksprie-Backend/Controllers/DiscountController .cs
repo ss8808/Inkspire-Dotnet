@@ -31,30 +31,91 @@ namespace Inksprie_Backend.Controllers
             return Ok(discount);
         }
 
-        [HttpPost("{adminId}")]
+        [HttpPost]
         //[Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create(int adminId, CreateDiscountDto dto)
+        public async Task<IActionResult> Create([FromBody] CreateDiscountDto dto)
         {
-            var created = await _discountService.CreateAsync(dto, adminId);
-            return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+            const int defaultAdminId = 1;
+
+            try
+            {
+                var created = await _discountService.CreateAsync(dto, defaultAdminId);
+                return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("❌ ERROR CREATING DISCOUNT: " + ex.Message);
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine("🔍 INNER EXCEPTION: " + ex.InnerException.Message);
+                }
+
+                return StatusCode(500, new
+                {
+                    StatusCode = 500,
+                    Message = "Internal Server Error from the middleware.",
+                    Detailed = ex.InnerException?.Message ?? ex.Message
+                });
+            }
         }
 
-        [HttpPut("{id}/by/{adminId}")]
+        [HttpPut("{id}")]
         //[Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Update(int id, int adminId, CreateDiscountDto dto)
+        public async Task<IActionResult> Update(int id, [FromBody] CreateDiscountDto dto)
         {
-            var updated = await _discountService.UpdateAsync(id, dto, adminId);
-            if (!updated) return NotFound();
-            return NoContent();
+            const int defaultAdminId = 1;
+            try
+            {
+                var updated = await _discountService.UpdateAsync(id, dto, defaultAdminId);
+                if (!updated) return NotFound();
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("❌ ERROR UPDATING DISCOUNT: " + ex.Message);
+                if (ex.InnerException != null)
+                {
+                    Console.WriteLine("🔍 INNER EXCEPTION: " + ex.InnerException.Message);
+                }
+
+                return StatusCode(500, new
+                {
+                    StatusCode = 500,
+                    Message = "Internal Server Error from the middleware.",
+                    Detailed = ex.InnerException?.Message ?? ex.Message
+                });
+            }
         }
 
         [HttpDelete("{id}")]
         //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
-            var deleted = await _discountService.DeleteAsync(id);
-            if (!deleted) return NotFound();
-            return NoContent();
+            try
+            {
+                var deleted = await _discountService.DeleteAsync(id);
+                if (!deleted) return NotFound();
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("❌ ERROR DELETING DISCOUNT: " + ex.Message);
+                return StatusCode(500, new
+                {
+                    StatusCode = 500,
+                    Message = "Internal Server Error while deleting.",
+                    Detailed = ex.InnerException?.Message ?? ex.Message
+                });
+            }
+
+
+        }
+
+        [HttpGet("discounted-books")]
+        public async Task<IActionResult> GetDiscountedBooks()
+        {
+            var discountedBooks = await _discountService.GetDiscountedBooksAsync();
+            return Ok(discountedBooks);
         }
     }
 }

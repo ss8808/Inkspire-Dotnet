@@ -95,6 +95,14 @@ namespace Inksprie_Backend.Data
                     .WithMany()
                     .HasForeignKey(p => p.OrderId);
 
+            modelBuilder.Entity<Order>()
+                    .HasOne(o => o.User)
+                    .WithMany()
+                    .HasForeignKey(o => o.UserId)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+
+
 
 
 

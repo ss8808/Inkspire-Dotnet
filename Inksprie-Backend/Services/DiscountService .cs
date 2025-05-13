@@ -56,8 +56,10 @@ namespace Inksprie_Backend.Services
                 BookId = dto.BookId,
                 UserId = adminId,
                 DiscountPercentage = dto.DiscountPercentage,
-                StartDate = dto.StartDate,
-                EndDate = dto.EndDate,
+                //StartDate = dto.StartDate,
+                //EndDate = dto.EndDate,
+                StartDate = DateTime.SpecifyKind(dto.StartDate, DateTimeKind.Utc),
+                EndDate = DateTime.SpecifyKind(dto.EndDate, DateTimeKind.Utc),
                 OnSale = dto.OnSale,
                 IsActive = dto.IsActive
             };
@@ -86,8 +88,11 @@ namespace Inksprie_Backend.Services
             discount.BookId = dto.BookId;
             discount.DiscountPercentage = dto.DiscountPercentage;
             discount.StartDate = dto.StartDate;
-            discount.EndDate = dto.EndDate;
-            discount.OnSale = dto.OnSale;
+            //discount.EndDate = dto.EndDate;
+            //discount.OnSale = dto.OnSale;
+            discount.StartDate = DateTime.SpecifyKind(dto.StartDate, DateTimeKind.Utc);
+            discount.EndDate = DateTime.SpecifyKind(dto.EndDate, DateTimeKind.Utc);
+
             discount.IsActive = dto.IsActive;
             discount.UserId = adminId;
 
@@ -107,10 +112,13 @@ namespace Inksprie_Backend.Services
             return true;
         }
 
+
         public async Task<List<DiscountedBookDto>> GetDiscountedBooksAsync()
         {
+            var now = DateTime.UtcNow;
+
             return await _context.Discounts
-                .Where(d => d.IsActive && d.OnSale)
+                .Where(d => d.IsActive && d.OnSale && d.EndDate >= now)
                 .Include(d => d.Book)
                     .ThenInclude(b => b.Inventory)
                 .Select(d => new DiscountedBookDto
@@ -162,6 +170,8 @@ namespace Inksprie_Backend.Services
                 QuantityInStock = discount.Book.Inventory?.QuantityInStock ?? 0
             };
         }
+
+
 
 
 
