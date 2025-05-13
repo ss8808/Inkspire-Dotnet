@@ -18,9 +18,18 @@ namespace Inksprie_Backend.Services
 
         public async Task<bool> AddReviewAsync(int userId, ReviewDto reviewDto)
         {
+            // prevent duplicate review
+            var alreadyReviewed = await _context.Reviews
+                .AnyAsync(r => r.UserId == userId && r.BookId == reviewDto.BookId);
+
+            if (alreadyReviewed)
+                return false;
+
             var hasPurchased = await _context.Orders
                 .Include(o => o.OrderItems)
-                .AnyAsync(o => o.UserId == userId && o.OrderItems.Any(i => i.BookId == reviewDto.BookId) && o.Status == OrderStatus.Completed);
+                .AnyAsync(o => o.UserId == userId &&
+                               o.OrderItems.Any(i => i.BookId == reviewDto.BookId) &&
+                               o.Status == OrderStatus.Completed);
 
             if (!hasPurchased)
                 return false;
@@ -38,6 +47,11 @@ namespace Inksprie_Backend.Services
             _context.Reviews.Add(review);
             await _context.SaveChangesAsync();
             return true;
+        }
+
+        public async Task<bool> HasUserReviewedAsync(int userId, int bookId)
+        {
+            return await _context.Reviews.AnyAsync(r => r.UserId == userId && r.BookId == bookId);
         }
     }
 }

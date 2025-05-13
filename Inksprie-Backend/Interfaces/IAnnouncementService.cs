@@ -10,5 +10,6 @@ namespace Inksprie_Backend.Interfaces
         Task<bool> UpdateAsync(int id, CreateAnnouncementDto dto, int createdBy);
 
         Task<bool> DeleteAsync(int id);
+
     }
 }

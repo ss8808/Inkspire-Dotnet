@@ -3,6 +3,7 @@ using System;
 using Inksprie_Backend.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Inksprie_Backend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250513090709_updatedataentity")]
+    partial class updatedataentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -367,8 +370,6 @@ namespace Inksprie_Backend.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
-
                     b.ToTable("Orders");
                 });
 
@@ -597,15 +598,15 @@ namespace Inksprie_Backend.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a146d1db-37b4-4faa-a8d4-c20da34400b4",
+                            ConcurrencyStamp = "89cc10d7-aa3c-4c53-ba0b-a5416f20af91",
                             Email = "admin@yourapp.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@YOURAPP.COM",
                             NormalizedUserName = "ADMIN@YOURAPP.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEEzs5bHvNZxJUN18cMDY9UsMYaFTonUoyRPhrXzyYheKOtzlzW/BQh4BCGkr94lisA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAJAkF6ZQpzMPYGBEECXXPP8ZgAsyZtdgDosHvtPpi3SLvnIbuk1yN/JN6+a/U3D2A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d1a93ce8-0e25-406d-997d-6a0c4e07250b",
+                            SecurityStamp = "808d52be-207d-47ed-adae-c72b5db22673",
                             TwoFactorEnabled = false,
                             UserName = "admin@yourapp.com"
                         });
@@ -764,17 +765,6 @@ namespace Inksprie_Backend.Migrations
                         .IsRequired();
 
                     b.Navigation("Book");
-                });
-
-            modelBuilder.Entity("Inksprie_Backend.Entities.Order", b =>
-                {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser<int>", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Inksprie_Backend.Entities.OrderItem", b =>

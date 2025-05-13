@@ -67,23 +67,26 @@ namespace Inksprie_Backend.Services
                 Id = announcement.Id,
                 Title = announcement.Title,
                 Content = announcement.Content,
-                StartDate = announcement.StartDate,
-                EndDate = announcement.EndDate,
-                CreatedBy = createdBy,
+                StartDate = DateTime.SpecifyKind(announcement.StartDate, DateTimeKind.Utc),
+                EndDate = DateTime.SpecifyKind(announcement.EndDate, DateTimeKind.Utc),
+                CreatedBy = announcement.CreatedBy,
                 IsActive = announcement.IsActive
             };
+
         }
 
-        public async Task<bool> UpdateAsync(int id, CreateAnnouncementDto dto, int createdBy)
+        public async Task<bool> UpdateAsync(int id, CreateAnnouncementDto dto, int _)
         {
+            const int defaultAdminId = 1;
+
             var announcement = await _context.Announcements.FindAsync(id);
             if (announcement == null) return false;
 
             announcement.Title = dto.Title;
             announcement.Content = dto.Content;
-            announcement.StartDate = dto.StartDate;
-            announcement.EndDate = dto.EndDate;
-            announcement.CreatedBy = createdBy;
+            announcement.StartDate = DateTime.SpecifyKind(dto.StartDate, DateTimeKind.Utc);
+            announcement.EndDate = DateTime.SpecifyKind(dto.EndDate, DateTimeKind.Utc);
+            announcement.CreatedBy = defaultAdminId;
             announcement.IsActive = dto.IsActive;
 
             _context.Announcements.Update(announcement);
@@ -91,6 +94,7 @@ namespace Inksprie_Backend.Services
 
             return true;
         }
+
 
 
         public async Task<bool> DeleteAsync(int id)
@@ -103,5 +107,6 @@ namespace Inksprie_Backend.Services
 
             return true;
         }
+
     }
 }

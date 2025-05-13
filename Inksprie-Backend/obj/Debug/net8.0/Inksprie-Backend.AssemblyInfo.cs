@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Inksprie-Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40d7ed2eb0a676ad8922d4315e64b9147a6ad5ff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d80ed1154623581fae37a3ca6253b70bb43fa7e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Inksprie-Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Inksprie-Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

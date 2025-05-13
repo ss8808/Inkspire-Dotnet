@@ -3,6 +3,7 @@ using System;
 using Inksprie_Backend.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Inksprie_Backend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250513101603_OrderHistoryChanges")]
+    partial class OrderHistoryChanges
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -597,15 +600,15 @@ namespace Inksprie_Backend.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a146d1db-37b4-4faa-a8d4-c20da34400b4",
+                            ConcurrencyStamp = "58c62fa8-f519-4933-933a-d6b4cfad9115",
                             Email = "admin@yourapp.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@YOURAPP.COM",
                             NormalizedUserName = "ADMIN@YOURAPP.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEEzs5bHvNZxJUN18cMDY9UsMYaFTonUoyRPhrXzyYheKOtzlzW/BQh4BCGkr94lisA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAED2s91DFKfo4pqlNGA89eerVboo59FOiWa/Hx6tQyT42kTy9Ki6bJK/GzhB3R1njQw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d1a93ce8-0e25-406d-997d-6a0c4e07250b",
+                            SecurityStamp = "7c047221-9761-4142-a11f-7587a953d578",
                             TwoFactorEnabled = false,
                             UserName = "admin@yourapp.com"
                         });

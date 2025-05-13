@@ -103,6 +103,73 @@ namespace Inksprie_Backend.Services
             await _context.SaveChangesAsync();
             return true;
         }
+        public async Task<IEnumerable<OrderHistoryDto>> GetAllOrderHistoryAsync()
+        {
+            return await _context.Orders
+                .Include(o => o.OrderItems).ThenInclude(i => i.Book)
+                .Include(o => o.User)
+                .OrderByDescending(o => o.OrderDate)
+                .Select(o => new OrderHistoryDto
+                {
+                    OrderId = o.Id,
+                    ClaimCode = o.ClaimCode,
+                    FinalAmount = o.FinalAmount,
+                    Status = o.Status.ToString(),
+                    OrderDate = o.OrderDate,
+                    MemberName = o.User.UserName,
+                    MemberEmail = o.User.Email,
+                    Books = o.OrderItems.Select(i => new OrderedBookDto
+                    {
+                        Title = i.Book.Title,
+                        Price = i.PriceAtOrder,
+                        Quantity = i.Quantity,
+                        CoverImageUrl = i.Book.CoverImageUrl
+                    }).ToList()
+                })
+                .ToListAsync();
+        }
+
+        public async Task<IEnumerable<OrderHistoryDto>> GetUserOrderHistoryAsync(int userId)
+        {
+            return await _context.Orders
+                .Include(o => o.OrderItems).ThenInclude(i => i.Book)
+                .Where(o => o.UserId == userId)
+                .OrderByDescending(o => o.OrderDate)
+                .Select(o => new OrderHistoryDto
+                {
+                    OrderId = o.Id,
+                    ClaimCode = o.ClaimCode,
+                    FinalAmount = o.FinalAmount,
+                    Status = o.Status.ToString(),
+                    OrderDate = o.OrderDate,
+                    MemberName = o.User.UserName,
+                    MemberEmail = o.User.Email,
+                    Books = o.OrderItems.Select(i => new OrderedBookDto
+                    {
+                        Title = i.Book.Title,
+                        Price = i.PriceAtOrder,
+                        Quantity = i.Quantity,
+                        CoverImageUrl = i.Book.CoverImageUrl
+                    }).ToList()
+                })
+                .ToListAsync();
+        }
+
+        public async Task<bool> CancelOrderAsync(string claimCode, int userId)
+        {
+            var order = await _context.Orders
+                .FirstOrDefaultAsync(o => o.ClaimCode == claimCode && o.UserId == userId && o.Status != OrderStatus.Completed);
+
+            if (order == null || order.Status == OrderStatus.Completed)
+                return false;
+
+            order.Status = OrderStatus.Cancelled;
+            order.UpdatedAt = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
 
     }
 }

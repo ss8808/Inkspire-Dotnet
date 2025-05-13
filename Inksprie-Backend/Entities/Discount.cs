@@ -12,5 +12,6 @@
         public bool IsActive { get; set; }
 
         public Book Book { get; set; } = null!;
+
     }
 }
