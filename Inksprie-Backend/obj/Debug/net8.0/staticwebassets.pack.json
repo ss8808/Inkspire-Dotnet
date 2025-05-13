@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\c04f3370-1b2b-4a20-b10a-bcf6daf1a15d_candy house.jpeg"
     },
     {
+      "Id": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\wwwroot\\images\\c3381a27-7841-4888-8c35-a9173c949e22_Screenshot 2023-04-06 201915.png",
+      "PackagePath": "staticwebassets\\images\\c3381a27-7841-4888-8c35-a9173c949e22_Screenshot 2023-04-06 201915.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Inksprie-Backend.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

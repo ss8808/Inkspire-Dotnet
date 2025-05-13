@@ -64,5 +64,21 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c04f3370-1b2b-4a20-b10a-bcf6daf1a15d_candy house.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c3381a27-7841-4888-8c35-a9173c949e22_Screenshot 2023-04-06 201915.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Inksprie-Backend</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Inksprie-Backend</BasePath>
+      <RelativePath>images/c3381a27-7841-4888-8c35-a9173c949e22_Screenshot 2023-04-06 201915.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\images\c3381a27-7841-4888-8c35-a9173c949e22_Screenshot 2023-04-06 201915.png))</OriginalItemSpec>
+    </StaticWebAsset>
   </ItemGroup>
 </Project>

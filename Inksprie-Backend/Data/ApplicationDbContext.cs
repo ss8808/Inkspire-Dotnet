@@ -1,4 +1,5 @@
 ﻿using Inksprie_Backend.Entities;
+using Inksprie_Backend.Enum;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -74,6 +75,25 @@ namespace Inksprie_Backend.Data
                         .WithOne(b => b.Inventory)
                         .HasForeignKey<Inventory>(i => i.BookId);
 
+
+
+
+            modelBuilder.Entity<CartItem>()
+                    .HasOne(ci => ci.Book)
+                    .WithMany()
+                    .HasForeignKey(ci => ci.BookId);
+
+            modelBuilder.Entity<Order>()
+                    .Property(o => o.Status)
+                    .HasConversion(
+                         v => v.ToString(),
+                         v => (OrderStatus)System.Enum.Parse(typeof(OrderStatus), v)
+                     );
+
+            modelBuilder.Entity<Purchase>()
+                    .HasOne(p => p.Order)
+                    .WithMany()
+                    .HasForeignKey(p => p.OrderId);
 
 
 

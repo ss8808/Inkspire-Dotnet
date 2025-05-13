@@ -716,6 +716,58 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Inksprie_Backend.Controllers.OrderController",
+    "Method": "CompleteOrder",
+    "RelativePath": "api/Order/complete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inksprie_Backend.Controllers.OrderController",
+    "Method": "PlaceOrder",
+    "RelativePath": "api/Order/place",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inksprie_Backend.Controllers.OrderController",
+    "Method": "Test",
+    "RelativePath": "api/Order/test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inksprie_Backend.Controllers.ReviewController",
+    "Method": "AddReview",
+    "RelativePath": "api/Review",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Inksprie_Backend.Dtos.ReviewDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Inksprie_Backend.Controllers.UserController",
     "Method": "GetProfile",
     "RelativePath": "api/User/profile",
