@@ -1,4 +1,6 @@
-﻿namespace Inksprie_Backend.Entities
+﻿using Inksprie_Backend.Enum;
+
+namespace Inksprie_Backend.Entities
 {
     public class Order
     {
@@ -9,7 +11,7 @@
         public bool DiscountApplied { get; set; }
         public decimal DiscountAmount { get; set; }
         public decimal FinalAmount { get; set; }
-        public string Status { get; set; } = "pending"; // Enum: 'pending', 'ready_for_pickup', 'completed', 'cancelled'
+        public OrderStatus Status { get; set; } = OrderStatus.Pending;
         public string ClaimCode { get; set; } = null!;
         public DateTime? UpdatedAt { get; set; }
 

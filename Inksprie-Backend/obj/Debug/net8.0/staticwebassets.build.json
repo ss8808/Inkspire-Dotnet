@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AUvsiqDQ86tVqVCS5aObFoYiL4EKY6sgId9eVzsYlY8=",
+  "Hash": "LSvBzOJDn5hF4L9+lZ5fL5pnNfHkL05/eVFnH8FIr0A=",
   "Source": "Inksprie-Backend",
   "BasePath": "_content/Inksprie-Backend",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\c04f3370-1b2b-4a20-b10a-bcf6daf1a15d_candy house.jpeg"
+    },
+    {
+      "Identity": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\wwwroot\\images\\c3381a27-7841-4888-8c35-a9173c949e22_Screenshot 2023-04-06 201915.png",
+      "SourceId": "Inksprie-Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\islington\\AD coursework 2\\test-repo\\Inksprie-Backend\\wwwroot\\",
+      "BasePath": "_content/Inksprie-Backend",
+      "RelativePath": "images/c3381a27-7841-4888-8c35-a9173c949e22_Screenshot 2023-04-06 201915.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c3381a27-7841-4888-8c35-a9173c949e22_Screenshot 2023-04-06 201915.png"
     }
   ]
 }

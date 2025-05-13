@@ -3,6 +3,7 @@ using System;
 using Inksprie_Backend.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Inksprie_Backend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250513053035_OrderStatus")]
+    partial class OrderStatus
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -411,9 +414,6 @@ namespace Inksprie_Backend.Migrations
                     b.Property<int>("BookId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("OrderId")
-                        .HasColumnType("integer");
-
                     b.Property<DateTime>("PurchaseDate")
                         .HasColumnType("timestamp with time zone");
 
@@ -421,10 +421,6 @@ namespace Inksprie_Backend.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("BookId");
-
-                    b.HasIndex("OrderId");
 
                     b.ToTable("Purchases");
                 });
@@ -593,15 +589,15 @@ namespace Inksprie_Backend.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "762fbd47-29d8-45b6-b39e-ea7d09973702",
+                            ConcurrencyStamp = "3eb497c6-ba77-49b1-99a3-417ca46c4a54",
                             Email = "admin@yourapp.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@YOURAPP.COM",
                             NormalizedUserName = "ADMIN@YOURAPP.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHLEEtY0Nd0DrBUb5Y1ANLmPm0vOS/++NLc16Sm/6v4IoUXniaNR5jpEkQYKDidG+g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPA+jXr15wwsEAJ+QTLEOsAQx5GBoAoZ2dGZaDx9O/NAoRMUsY8NT4VN260wCW4PwQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "697d9698-2680-47b3-9b6c-1cd12c00576b",
+                            SecurityStamp = "8bb46fe2-f5e9-4b9b-b974-f839c9f5d1cf",
                             TwoFactorEnabled = false,
                             UserName = "admin@yourapp.com"
                         });
@@ -761,25 +757,6 @@ namespace Inksprie_Backend.Migrations
 
                     b.HasOne("Inksprie_Backend.Entities.Order", "Order")
                         .WithMany("OrderItems")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Book");
-
-                    b.Navigation("Order");
-                });
-
-            modelBuilder.Entity("Inksprie_Backend.Entities.Purchase", b =>
-                {
-                    b.HasOne("Inksprie_Backend.Entities.Book", "Book")
-                        .WithMany()
-                        .HasForeignKey("BookId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Inksprie_Backend.Entities.Order", "Order")
-                        .WithMany()
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
